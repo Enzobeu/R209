@@ -1,0 +1,116 @@
+/* Style général pour la vue ordinateur */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #333; /* Fond sombre */
+    color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Conteneur du formulaire */
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 100%; /* Taille fixe pour PC */
+}
+
+/* Titre du formulaire */
+h2 {
+    text-align: center;
+    color: #fff;
+    padding: 15px;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Labels */
+label {
+    font-weight: bold;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Champs texte, mot de passe, e-mail, select */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Zone de texte */
+textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Niveau d'urgence (boutons radio) */
+.niveau-urgence {
+    display: flex;
+    gap: 75px;
+    align-items: center;
+}
+
+/* Case à cocher */
+.conteneur {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Lien vers la politique de confidentialité */
+a {
+    color: blue;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+/* Bouton envoyer */
+input[type="submit"] {
+    background-color: #0a58ca;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    width: 20%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+    margin: 15px auto 0;
+    display: block;
+    text-align: center;
+}
+
+input[type="submit"]:hover {
+    background-color: #084298;
+}
+
+/* === RESPONSIVE DESIGN POUR MOBILE === */
+@media (max-width: 768px) {
+    form {
+        width: 90%; /* Ajustement sur mobile */
+        padding: 20px;
+    }
+
+    /* Adapter les boutons radio en colonne */
+    .radio-group {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    /* Réduction de la taille du bouton */
+    input[type="submit"] {
+        font-size: 14px;
+        padding: 10px;
+    }
+}

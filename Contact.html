@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="contact_section ">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 px-0">
+                    <div class="img-box1">
+                        <img src="images/Sam.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="form_container pr-0 pr-lg-5 mr-0 mr-lg-2">
+                        <div class="heading_container">
+                            <h2>
+                                Formulaire de Contact
+                            </h2>
+                        </div>
+                        <form action="." method="post">
+                            <div>
+                                <label for="objet">Votre Pseudo*</label>
+                                <input type="text" placeholder="Votre Pseudo">
+                            </div>
+                            <div>
+                                <label for="objet">Votre Mot de passe*</label>
+                                <input type="password" placeholder="Votre Mot de Passe">
+                            </div>
+                            <div>
+                                <label for="objet">Votre e-mail*</label>
+                                <input type="text" placeholder="Votre e-mail">
+                            </div>
+                            <div>
+                                <label for="objet">Objet du message*</label>
+                                <select id="objet" name="objet">
+                                    <option value="question" selected>J’ai une question</option>
+                                    <option value="suggestion">Je fais une suggestion</option>
+                                    <option value="probleme">Je rencontre un problème</option>
+                                    <option value="autre">Autre</option>
+                                </select><br><br>
+                            </div>
+
+                            <div>
+                                <label for="objet">Votre Message*</label>
+
+                                <input type="text" class="message-box" placeholder="Votre Message*">
+                            </div>
+                            <div class="niveau-urgence">
+                                <input type="radio" name="urgence" id="Urgent"> <label for="Urgent">Urgent</label>
+                                <input type="radio" name="urgence" id="Normal"> <label for="Normal">Normal</label>
+                                <input type="radio" name="urgence" id="lent" checked> <label for="lent">Lent</label>
+                            </div>
+                            <div class="conteneur">
+                                <input type="checkbox" id="confidentialite" name="confidentialite" required>
+                                <label for="confidentialite">
+                                    J’ai lu et j’accepte la <a href="politique-de-confidentialite.html" target="_blank"
+                                        style="color: blue; text-decoration: underline;">politique de confidentialité</a> du site.
+                                </label><br><br>
+
+
+                            </div>
+
+                            <div class="d-flex ">
+                                <input type="submit" name="Envoyer" value="Envoyer">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+</body>
+
+</html>
